@@ -31,8 +31,13 @@
 	margin: 0 auto; 
 	/*height: XXXpx; /* spécifiez la hauteur de l'image, une bonne attitude à prendre */ 
 	/*width: XXXpx; /* spécifiez la largeur de l'image, une bonne habitude à prendre */ 
-
 	} 
+
+	img.topic	
+	{
+		max-width: 700px;
+		display: block; 
+	}
 	
 	.header
 	{
@@ -56,8 +61,15 @@
 
 	a
 	{
-		color: #ff6100;
+		color: #4376AC;
+		text-decoration: none;
 	}
+	a.ouvrir
+	{
+		color: #6FAFE9;
+		text-decoration: none;
+	}
+
 
 /*******************************
 *Barre de navigation
@@ -113,6 +125,15 @@
 	}
 
 
+/*************************************
+*  Blocs centraux
+*************************************/
+	article
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
 	/**/
 	section
 	{
@@ -147,6 +168,27 @@
 		padding-right : marge intérieure à droite.*/
 
 	}
+
+	aside
+	{
+	    float: right;
+	    /*width: 235px;*/
+		/*min-width: 200px;*//*Exige une largeur minimale, même si un utilisateur a moins de 400px à 70%.*/
+		/*min-height: 150px; */	
+		font-family: sans-serif;
+		/*border: 3px groove;*/
+		/*border-color: #65ff00;*/
+		text-align: justify;
+		word-wrap: break-word; /*casse les mots trop longs comme les urls pour revenir à la ligne*/
+		overflow: auto;/*si le texte dépasse du bloc, un curseur apparaît.*/
+	    /*padding: 20px;*/ /* Marge intérieure de 20px */
+	    /*margin-right: 100px;*/ /* Marge extérieure de 50px */
+	    margin-top: 20px;	
+	    margin-bottom: 20px;
+	    margin-left: 40px;	
+	    margin-right: auto;
+	}
+
 
 
 	footer
