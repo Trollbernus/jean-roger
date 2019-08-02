@@ -1,3 +1,6 @@
+<?php
+ session_start();
+?>
 <!--***********************************
 *Test d'un fichier html un peu plus structuré.....
 *30/08/2014
@@ -38,7 +41,7 @@
  					<aside>
 	 					<ul>
 	 						<li>
-	 						</li>
+	 						</li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -48,7 +51,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						</li>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
@@ -59,7 +62,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -69,7 +72,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -79,7 +82,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -89,7 +92,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -99,7 +102,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -109,7 +112,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -119,7 +122,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -129,7 +132,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -139,7 +142,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>
@@ -149,7 +152,7 @@
  				<article>
  					<aside>
 	 					<ul>
-	 						<li><?php afficherdatepost(); ?>
+	 						<li><?php afficherdatepost(1); ?>
 	 						<li><a href="mailto:xxx@yyy.zz">Contacter l'auteur</a></li>
 	 						<li><a href="topic.php">Lien</a></li>
 	 					</ul>

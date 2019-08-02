@@ -1,3 +1,6 @@
+<?php
+ session_start();
+?>
 <!--***********************************
 *Test d'un fichier html un peu plus structuré.....
 *30/08/2014

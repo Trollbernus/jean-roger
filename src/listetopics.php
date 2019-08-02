@@ -1,4 +1,3 @@
-
 		<section>
 			<article>
 				<h1> <!--Titre de la section-->

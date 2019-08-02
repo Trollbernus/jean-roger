@@ -1,5 +1,5 @@
 <?php 
-	function afficherdatepost()
+	function afficherdatepost($x)
 {
 		$j=date('j');
 		$m=date('m');
@@ -7,7 +7,6 @@
 		$h=date('H');
 		$mi=date('i');
 		// echo 'Posté le ' . j . '/' . m . '/' . a .' à '. h.'h'.m.'.'; 
-		echo "Posté le $j/$m/$a à ${h}h$mi";
+		if($x==1) echo "Posté le $j/$m/$a à ${h}h$mi";
 }
-afficherdatepost();
 ?>
