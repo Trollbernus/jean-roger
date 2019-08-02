@@ -1,2 +1,3 @@
 # jean-roger
-troudtroudlulzfohzjlfqhdjqlvuhfdixl
+Codes sources du futur fofo coco.
+Codé en php et mySQL.
