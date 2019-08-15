@@ -1,0 +1,169 @@
+<!--******************************************************************************************************************
+**********************************************************************************************************************
+**                                                                                                                   
+**Entraînement au HTM, mes premiers pas !!!
+**
+**Le navigateur ne semble pas apprécier les caractères spéciaux. Il y a une solution : chaque caractère spécial doit être remplacé par un code texte, par exemple é sera remplacé par &eacute;. Pour une liste relativement complète de ces caractères, on pourra consulter avec profit le site suivant :
+**http://alexandre.apalapetite.fr/doc-alex/alx_special.html
+**
+**
+**                                                                                              
+**Mises a jour :                                                                                                     
+** 19/07/2014                                                                             
+**    debut de l'apprentissage, premieres balises                                                                    
+**    Avancement du tutoriel :                                                           
+**    http://fr.openclassrooms.com/informatique/cours/apprenez-a-creer-votre-site-web-avec-html5-et-css3/votre-premiere-page-web-en-html
+**    http://fr.openclassrooms.com/informatique/cours/apprenez-a-creer-votre-site-web-avec-html5-et-css3/organiser-son-texte
+**                                                                                                                   
+** 22/07/2014                                                        
+**   http://fr.openclassrooms.com/informatique/cours/apprenez-a-creer-votre-site-web-avec-html5-et-css3/organiser-son-texte ==> terminay
+**   http://fr.openclassrooms.com/informatique/cours/apprenez-a-creer-votre-site-web-avec-html5-et-css3/creer-des-liens==> terminay
+**
+**  23/07/2014
+**    idée : se procurer brackets, un éditeur html performant.          
+**    essayer aussi sublime text: http://www.sublimetext.com/3 
+** 
+**  24/07/2014
+**    http://fr.openclassrooms.com/informatique/cours/apprenez-a-creer-votre-site-web-avec-html5-et-css3/les-images-18
+**
+**Suite du cours : voir 
+**
+**
+***********************************************************************************************************************
+*********************************************************************************************************************-->
+
+
+<!DOCTYPE html> <!-- Balise pour definir le html5-->
+
+<html> <!-- debut de la page -->
+
+
+  <!--********************
+  ************************
+  **En-tete de la page **
+  ***********************
+  *********************-->
+  <head>
+    <meta chartset="utf-8" />
+    <!--  <meta chartset="utf-8" />  <!-- Encodage  marche pô... -->
+    <title> HUUUTZ </title>    <!--titre-->
+  <head>
+  
+
+  <!--******************
+  **********************
+  **Corps de la page  **
+  *********************
+  *******************-->
+  <body>
+
+
+<!--****************************
+*      Titre                   *
+*****************************-->
+    <h1> HUUUTZ </h1> <!--Balises pour un titre très important (généralement le seul titre de la page). L'importance diminue avec le nombre-->
+
+
+<!--*********************************************
+*   Liens "ancre"                               *
+**********************************************-->
+    <h2> Sommaire </h2>
+    <p>
+<!--En ajoutant 'href="..."' dans la balise du lien, spécifie le marquage que l'on retrouvera dans l' "id" des titres suivants. -->
+    <a href="#paragraphes">La base des parhagraffffzzz </a> <br/>
+    <a href="#caracteres">Test de caract&egrave;res sp&eacute;ciaux </a> <br/>
+    <a href="#marquage">Les Khourbz c'est important </a> <br/>
+    Flemme de faire la suitedu sommaire......
+    <p>
+
+<!--************************
+*   Paragraphes            *
+*************************--> 
+    <!--"id" spécifie le marquage ; si on y fait référence dans un lien on retombe sur ce titre.-->
+    <h2 id="paragraphes"> La base des parhagraffffzzz </h2>   <!--titre de degré 2.. etc. --> 
+
+    <p> <!--balise pour creer un paragraphe--> 
+      Luuulz jeu fédé KHOUUUURBBSSZZ 
+    <br /> <!--saut de ligne ; balise seule -->
+      OOOOOH OH OH OH OH 
+    </p>
+
+
+<!--**********************
+*   Caractères spéciaux  *
+************************-->
+    <h2 id="caracteres"> Test de caract&egrave;res sp&eacute;ciaux </h2>
+
+    <p > Ici on aime &pound;' &euro;N$ </ p>
+
+
+
+<!--*****************************
+*   Marquage de texte           *
+******************************-->
+    <h2 id="marquage"> Les Khourbz c'est important </h2>
+
+    <p> Les <em> KOUUURBBBBZZZZ</em> c'est très important !!!! <br/> Et c'est tellement important que <strong>KHOUUURBBZZZZZ</strong></p>
+
+    <p> EH LES GENS, J'AI FAIT DES <mark>KHOUUUUUUUURRRRRRRRRRRRRBBBBBBBBBBBBZZZZZZZZZZZZZZ</mark></p>
+
+
+<!--****************************
+*   Lites                      *
+*****************************-->
+  <h2> Apprends à faire des listes, gras </h2>
+    <p>Eh regardeeezzzz : <br />
+
+        <ul>   <!--liste non ordonnée-->
+            <li>kourbz</li>
+            <li>lulz</li>
+            <li>hutz</li>
+            <li>gras</li>
+            <li>Reblovieux</li>
+            <li>LIVAROOOOOT</li>
+            <li>coq</li>
+            <li>coq</li>
+        </ul>
+        <ol>   <!--liste ordonnée-->
+            <li>kourbz</li>
+            <li>lulz</li>
+            <li>hutz</li>
+            <li>gras</li>
+            <li>Reblovieux</li>
+            <li>LIVAROOOOOT</li>
+            <li>coq</li>
+            <li>coq</li>
+
+        </ol>
+
+    </p>
+    
+
+
+
+<!--************************
+*   Apprendre les liens    *
+*************************-->
+  <h2>Liens</h2>
+      <p>
+      Le meilleur site du monde est <a href="http://perso.crans.org/gmastio" title="Un vrai site de bernard !!!">L'Outre-Ça</a>. Eh ouais Bernard !! <!--Avec le "title" une fenêtre informe l'utilisateur avant qu'il ne clique sur le lien-->
+      <br/>
+      Le site de <a href="http://www.forum-dessine.fr" title="olugcluloululoulubgloubidoulibul" target="_blank"> Loubluougloulioubliouligblou</a><!--target="blanc" => ouverture d'un onglet quand on clique sur le lien-->
+      <br/>
+      La site de ce cours <a href="file:///home/leo/Documents/cours_html/20140722_hutz.html">ici</a>. Ou bien <a href="20140722_hutz.html">ici</a> mais en fait c'est la même chose oh oh oh
+      </p>   
+      <p> 
+         Et une petite <a href="20140722_hutz.html#surprise"> surprise... </a> <!--Lien vers un ancrage sur une autre page html-->
+      </p>
+      <p>
+         Eh Bernard !!! Et si tu m'envoyais un <a href="mailto:leo.bernus@gmail.com">mail</a> ?!!??!??!? <!--Provoquer l'envoi d'un mail-->
+      </p>
+      <p>
+         Télécharge ça, de la pure !! ==> <a href="coq.troll">Télécharger le fichier coq.troll</a>
+      </p>
+     
+  </body>
+
+
+
+</html>
