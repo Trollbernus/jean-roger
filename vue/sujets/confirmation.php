@@ -15,7 +15,7 @@
 				?>
 			</p>
 			<h2>Confirmer l'envoi</h2>
-			<p>Êtes-vous sûrs que votre message convient ?</p>
+			<p>Êtes-vous sûr que votre message convient ?</p>
 			<fieldset>
  					<form method="post" action="supprimer.php" enctype="multipart/form-data"> <!-- supprimer a coder !!! -->
  					<?php if (isset($name)): ?>
@@ -39,7 +39,7 @@
 											<input type="hidden" name="nomfichier" value=<?php echo $name; ?> /> 						
  					<?php endif ?>
  					<?php if (isset($text)): ?>
-						<input type="hidden" name="text" value="<?php echo $text; ?>" />					
+						<input type="hidden" name="text" value="<?php echo $text; ?>" />
  					<?php endif ?>
 					<input type="hidden" name="idsujet" value="<?php echo $idsujet; ?>" />
 					<p>

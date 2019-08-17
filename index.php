@@ -1,7 +1,6 @@
 <?php
 include_once('modele/connexion_sql.php');
 
-//echo 'coucou';
 if (!isset($_GET['section']) OR $_GET['section'] == 'index') // lefofococo
 {
     include_once('controle/sujets/listesujets.php'); 

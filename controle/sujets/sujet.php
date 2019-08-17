@@ -46,7 +46,7 @@ if ((isset($_GET['id_sujet']))AND($_GET['id_sujet']>=0)) { // AND(is_int($_GET['
 			$messages[$cle]['texte'] = nl2br(htmlspecialchars($message['texte']));
 			// si le texte est vide (code par "v" dans la bdd) on affiche du rien
 			if (strlen($messages[$cle]['texte'])>=2) {
-				$messages[$cle]['texte'] = nl2br(htmlspecialchars($message['texte'])) . '<br/><br/>';
+				$messages[$cle]['texte'] = $message['texte'] . '<br/><br/>';
 			}else{
 				$messages[$cle]['texte']='';
 			}

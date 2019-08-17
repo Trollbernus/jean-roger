@@ -37,7 +37,7 @@
 			{
 				?>
 				<p>
-					<!-- Lien vers le sujet ouvert (encore a faire !!) -->
+					<!-- Lien vers les sujets verrouilles -->
 					<?php $idsujet=$sujet['id'] ;?>
 					<a href="index.php?section=sujet&id_sujet=<?php echo $idsujet ?>&archive=1"><?php echo $sujet['titre'] ?></a>
 					<!-- Affichage de la date du dernier message -->
@@ -47,7 +47,7 @@
 			}
 			?>
 
-			<!-- Lien vers les archives (a faire !!!) -->
+			<!-- Lien vers les archives -->
 			<p><a href="archives.php">Sujets archivés</a></p>
 		</article></section>
 

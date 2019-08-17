@@ -24,7 +24,7 @@ function ajout_message($mail,$texte,$lien,$nomfichier,$idsujet)
                           VALUES(:mail,:texte,:lien,:nomfichier,NOW(),:ordre,:suppr,NOW(),:id_sujet)');
     $req->execute(array(
                   'mail'=>$mail,
-                  'texte'=>htmlspecialchars($texte),
+                  'texte'=>$texte,
                   'lien'=>$lien,
                   'nomfichier'=>$nomfichier,
                   //'date_post'=>NOW(),
