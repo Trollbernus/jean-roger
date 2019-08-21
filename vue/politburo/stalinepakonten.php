@@ -8,11 +8,11 @@
 
 		<!-- D'abord on affiche les sujets ouverts -->
 		<section><article>
-			<h1>Erreur 404</h1>
+			<h1>GOULAG.</h1>
 
-			<p>Cette page n'existe pas.</p>
+			<p>Peuh. Choqué déçu. Kasstoi.</p>
 
-			<p><img src="vue/images/404.jpeg"></p>
+			<p><img src="vue/images/stalinepakonten.gif"></p>
 
 			<p><a href="index.php">Retour au forum</a></p>
 		</article></section>
