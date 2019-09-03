@@ -17,10 +17,9 @@
 			?>
 
 			<ul>
-				<li><a href="accueil_politburo.php">Modifier un sujet</a></li> <!-- a coder !!! -->
-				<li><a href="accueil_politburo.php">Consulter les messages supprimées</a></li> <!-- a coder !!! -->
-				<li><a href="accueil_politburo.php">Consulter les sujets supprimés</a></li> <!-- a coder !!! -->
-				<li><a href="accueil_politburo.php">Consulter la messagerie du Politburo</a></li> <!-- a coder !!! -->
+				<li><a href="pol_index.php?section=sujets_prop">Modifier un sujet</a></li> <!-- a coder !!! -->
+				<li><a href="pol_index.php?section=sujets_supprimes">Consulter les sujets supprimés</a></li> <!-- a coder !!! -->
+				<!-- <li><a href="pol_index.php?section=messagerie">Consulter la messagerie du Politburo</a></li> --> <!-- a coder !!! -->
 			</ul>
 
 		</article></section>

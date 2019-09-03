@@ -3,7 +3,7 @@
 	$envoiimage=0;
 	$probleme_image=1;
 
-	if ($_POST['antispam']!=8) { //anti spam
+	if ( (!isset($_POST['captcha'])) OR ($_POST['captcha']!=$_SESSION['blubliblu'])) { //anti spam
 		$reponse = 'Dégage sale robot (ou apprends à compter)';
 	}elseif(!isset($_POST['titre_sujet'])OR(strlen($_POST['titre_sujet'])<=1)){
 		$reponse='Erreur lors de l\'envoi du titre';

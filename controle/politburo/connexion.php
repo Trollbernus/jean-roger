@@ -45,11 +45,15 @@
 
 	$_SESSION['message']=$reponse.'<br/>';
 
-	if ($_SESSION['politburo']==0) {
-		include_once('vue/politburo/stalinepakonten.php');
-	}
 	if ($_SESSION['politburo']==1) {
 		include_once('vue/politburo/accueil.php');
+	}
+
+	if ($_SESSION['politburo']==0) {
+		include_once('vue/politburo/stalinepakonten.php');
+		// Puis on detruit la session pour eviter une reconnexion
+		$_SESSION = array();
+		session_destroy();
 	}
 
 

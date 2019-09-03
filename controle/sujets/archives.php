@@ -1,7 +1,7 @@
 <?php
 // On demande les sujets archivés
 include_once('modele/sujets/get_listesujets.php');
-$sujets_archives = get_listesujets(2);
+$sujets_archives = get_listesujets(2,0);
 // on les fout dans des variables
 foreach($sujets_archives as $cle => $sujet)
 {

@@ -1,3 +1,10 @@
+<?php 
+// si la preco n'est pas etablie on fait croire que la page n'existe pas
+if ( !isset($_SESSION['preconnexion']) OR ($_SESSION['preconnexion']!=1) ) {
+	header('Location: index.php?section=erreur404');
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +13,8 @@
 	<body>
 		<?php include("vue/headernav.php"); ?>
 
-		<!-- D'abord on affiche les sujets ouverts -->
+
+
 		<section><article>
 			<h1>GOULAG.</h1>
 
@@ -14,7 +22,10 @@
 
 			<p><img src="vue/images/stalinepakonten.gif"></p>
 
+			<p><?php echo $_SESSION['message']; ?></p>
+
 			<p><a href="index.php">Retour au forum</a></p>
+
 		</article></section>
 
 
@@ -22,3 +33,4 @@
 
 	</body>
 </html>
+

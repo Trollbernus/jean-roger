@@ -14,6 +14,10 @@ if (!isset($_GET['section']) OR $_GET['section'] == 'index') // lefofococo
 		$formulaire=1; // sinon on laisse le formulaire
 	}
 	include_once('controle/sujets/sujet.php');
+}elseif( $_GET['section']=='contact' ){
+	include_once('vue/articles/contact.php');
+}elseif( $_GET['section']=='a_propos'){
+	include_once('vue/articles/a_propos.php');
 }else{
 	include_once('vue/erreur404.php');
 }

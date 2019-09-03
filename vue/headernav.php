@@ -6,11 +6,12 @@
 
 		<nav>
 			<ul>
-				<li> <a href="index.php">À propos</a> </li>
-				<li> <a href="archives.php">Archives</a> </li>
 				<li> <a href="index.php">Accueil</a></li>
+				<li> <a href="index.php?section=a_propos">À propos</a> </li>
+				<li> <a href="index.php?section=contact">Contact</a></li>
+				<li> <a href="archives.php">Archives</a> </li>
 				<?php if( (isset($_SESSION['politburo'])) AND ($_SESSION['politburo']==1) ){ ?>
-					<li><a href="accueil_politburo.php">Tableau de bord du Politburo</a></li>
+					<li><a href="pol_index.php">Tableau de bord du Politburo</a></li>
 					<li><a href="deconnexion_politburo.php">Sortir du Politburo</a></li>
 				<?php } ?>
 			</ul>

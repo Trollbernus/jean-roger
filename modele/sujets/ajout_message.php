@@ -2,14 +2,9 @@
 
 function ajout_message($mail,$texte,$lien,$nomfichier,$idsujet)
 {
-    echo $texte;
+    $idsujet = (int) $idsujet;
+    //echo $texte;
     global $bdd;
-
-    // echo $mail;
-    // echo $texte;
-    // echo $lien;
-    // echo $nomfichier;
-    // echo $idsujet;
         
     $req = $bdd->prepare('SELECT 
                           MAX(ordre) as ordre

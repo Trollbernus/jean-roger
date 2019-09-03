@@ -13,8 +13,7 @@
 
 			<p>Avant d'ouvrir un sujet, assurez-vous d'avoir pris connaissance de <a href="index.php?section=charte">la charte</a>.<br/>
 			</p>
-			<fieldset>
- 					<form method="post" action="nouveau_sujet.php" enctype="multipart/form-data">
+				<form method="post" action="nouveau_sujet.php" enctype="multipart/form-data">
  					<p> Titre du nouveau sujet :
  						<textarea name="titre_sujet" id="titre_sujet"></textarea>
  					</p>
@@ -33,14 +32,13 @@
 						<!-- <label for="tpost"> -->Ou bien poster du texte</label><br />
 						<textarea name="tpost" id="tpost"></textarea>
 					</p>
-					<p>
-						<!-- <label for="antibot"> -->Anti-spam : 5+3=<!-- </label> --><input type="number" name="antispam"/>
-					</p>
+					<p> <img src="modele/sujets/captcha2.php" alt="Code de vérification" />
+
+					<label>Recopier le code à gauche</label> : <input type="text" name="captcha" /></p>
 					<p>
 						<input type="submit" name="submit" value="Envoyer" />
 					</p>
 				</form>
-			</fieldset>
 
 
 		</section></article>

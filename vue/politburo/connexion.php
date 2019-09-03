@@ -44,7 +44,7 @@
 			</fieldset>
 
 
-		</section></article>
+		</article></section>
 
  		<?php include("vue/footer.php"); ?>
 	</body>

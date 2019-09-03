@@ -1,20 +1,3 @@
-/******************************************
-*Style pour structure.html
-*
-*30/08/2014
-*Dans le tuto, j'en suis là :
-*		http://fr.openclassrooms.com/informatique/cours/apprenez-a-creer-votre-site-web-avec-html5-et-css3/structurer-sa-page
-*		Terminay ==>
-*		http://fr.openclassrooms.com/informatique/cours/apprenez-a-creer-votre-site-web-avec-html5-et-css3/le-modele-des-boites
-*06/09/2014
-*		Terminay ! ==>
-*		http://fr.openclassrooms.com/informatique/cours/apprenez-a-creer-votre-site-web-avec-html5-et-css3/le-positionnement-en-css
-*		Terminay ==>
-*		http://fr.openclassrooms.com/informatique/cours/apprenez-a-creer-votre-site-web-avec-html5-et-css3/tp-creation-d-un-site-pas-a-pas
-*
-*
-*
-******************************************/
 
 /****************
 *Header
@@ -70,6 +53,15 @@
 		text-decoration: none;
 	}
 
+	.politburo
+	{
+		color: #ff0000;
+	}
+	.politburoimage
+	{
+		border: 3px groove;
+		border-color: #ff0000; 
+	}
 
 /*******************************
 *Barre de navigation
@@ -128,16 +120,82 @@
 /*************************************
 *  Blocs centraux
 *************************************/
-	article
+	article, aside
 	{
-		margin-top: 20px;
-		margin-bottom: 20px;
+	    display: inline-block;
+	    vertical-align: top;
+	    text-align: justify;
 	}
 
-	/**/
+
+	aside
+	{
+		position: relative;
+	    float: right;
+	    /*width: 235px;*/
+		/*min-width: 200px;*//*Exige une largeur minimale, même si un utilisateur a moins de 400px à 70%.*/
+		/*min-height: 150px; */	
+		max-width: 900px;
+		font-family: sans-serif;
+		/*border: 3px groove;*/
+		/*border-color: #65ff00;*/
+		text-align: justify;
+		word-wrap: break-word; /*casse les mots trop longs comme les urls pour revenir à la ligne*/
+		/*overflow: auto;*//*si le texte dépasse du bloc, un curseur apparaît.*/
+	    /*padding: 20px;*/ /* Marge intérieure de 20px */
+	    /*margin-right: 100px;*/ /* Marge extérieure de 50px */
+	    margin-top: 20px;	
+	    margin-bottom: 20px;
+	    margin-left: 40px;	
+	    margin-right: auto;
+	}
+
+
+
+	article
+	{
+		/*border: 3px groove;*/
+		/*border-color: #ff0000; */
+		
+		float: left;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 20px;
+	  	margin-right: auto;
+	  	/*position: relative;*/
+	  	width:800px;
+	}
+
+	article.suppr
+	{
+		border: 3px groove;
+		border-color: #ff0000; /*#65ff00 vert clair*/
+	}
+
+	section.bloc
+	{
+		width: 100%;
+		/*min-width: 400px;*//*Exige une largeur minimale, même si un utilisateur a moins de 400px à 70%.*/
+		/*min-height: 150px;*/ 	
+		font-family: sans-serif;
+		/*border: none;*/
+
+		border: none;
+
+		text-align: justify;
+		word-wrap: break-word; /*casse les mots trop longs comme les urls pour revenir à la ligne*/
+		/*overflow: auto;*/ /*si le texte dépasse du bloc, un curseur apparaît.*/
+	    /*padding: 20px;*/ /* Marge intérieure de 20px */
+	    /*margin: 50px; /* Marge extérieure de 50px */
+	    /*margin-bottom: 20px;*/
+	    /*margin-top: 20px;*/
+	    margin: -20px;  /*auto; /*bloc centré*/
+	  	/*margin-right: 20;*/
+	}
+
 	section
 	{
-		width: 60%;
+		width: 70%;
 		min-width: 400px;/*Exige une largeur minimale, même si un utilisateur a moins de 400px à 70%.*/
 		min-height: 150px; 	
 		font-family: sans-serif;
@@ -169,25 +227,7 @@
 
 	}
 
-	aside
-	{
-	    float: right;
-	    /*width: 235px;*/
-		/*min-width: 200px;*//*Exige une largeur minimale, même si un utilisateur a moins de 400px à 70%.*/
-		/*min-height: 150px; */	
-		font-family: sans-serif;
-		/*border: 3px groove;*/
-		/*border-color: #65ff00;*/
-		text-align: justify;
-		word-wrap: break-word; /*casse les mots trop longs comme les urls pour revenir à la ligne*/
-		overflow: auto;/*si le texte dépasse du bloc, un curseur apparaît.*/
-	    /*padding: 20px;*/ /* Marge intérieure de 20px */
-	    /*margin-right: 100px;*/ /* Marge extérieure de 50px */
-	    margin-top: 20px;	
-	    margin-bottom: 20px;
-	    margin-left: 40px;	
-	    margin-right: auto;
-	}
+
 
 
 

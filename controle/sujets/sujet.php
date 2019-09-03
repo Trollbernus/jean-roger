@@ -9,6 +9,10 @@ if ((isset($_GET['id_sujet']))AND($_GET['id_sujet']>=0)) { // AND(is_int($_GET['
 	if ((existe_sujet($_GET['id_sujet'])==0)) {
 		 	header('Location: index.php?section=erreur404');
 	}
+	// verifier que le sujet n'est pas supprime
+	if (supprime_sujet($_GET['id_sujet'])==1) {
+		 	header('Location: index.php?section=erreur404');
+	}
 
 	//On demande d'abord de quel sujet il s'agit
 	$ttitre= get_titresujet($idsujet);
@@ -17,8 +21,8 @@ if ((isset($_GET['id_sujet']))AND($_GET['id_sujet']>=0)) { // AND(is_int($_GET['
 		$ttitre[$cle]['titre']=nl2br(htmlspecialchars($titre['titre']));
 	}
 
-	// On demande les messages
-	$messages = get_messagessujet($idsujet);
+	// On demande les messages (non supprimes !)
+	$messages = get_messagessujet($idsujet,0);
 	// On effectue du traitement sur les données (contrôleur)
 	// Ici, on doit surtout sécuriser l'affichage
 	foreach($messages as $cle => $message)
@@ -49,7 +53,7 @@ if ((isset($_GET['id_sujet']))AND($_GET['id_sujet']>=0)) { // AND(is_int($_GET['
 				$messages[$cle]['texte'] = $message['texte'] . '<br/><br/>';
 			}else{
 				$messages[$cle]['texte']='';
-			}
+			}	
 
 			// image
 			// si pas d'image on affiche du rien

@@ -2,9 +2,9 @@
 	$envoireussi=0;
 	$envoiimage=0;
 
-	if ($_POST['antispam']!=8) { //anti spam
+	if ( (!isset($_POST['captcha'])) OR ($_POST['captcha']!=$_SESSION['blubliblu'])) { //anti spam
 		$reponse = 'Dégage sale robot (ou apprends à compter)';
-	}elseif ((strlen(htmlspecialchars($_POST['tpost']))<=1)&&(!(isset($_FILES['image'])))) {
+	}elseif ( ( (!isset($_POST['tpost']) ) OR (strlen(htmlspecialchars($_POST['tpost']))<=2) ) && (!(isset($_FILES['image'])) OR (strlen($_FILES['image']['tmp_name']) < 3  ))) {
 		$reponse = 'Erreur : vous devez envoyer du texte ou une image !';
 	}elseif (strlen($_POST['tpost'])>=8000) {
 		$reponse = "Erreur : message trop long (limité à 8000 caractères).";
@@ -34,10 +34,12 @@
 
 	$idsujet=$_POST['idsujet'];
 
+	// echo $_POST['captcha'].'<br/>';
+	// echo $_SESSION['captcha'];
 	if (($envoireussi==1)AND($probleme_image==0)) {
 		include_once('vue/sujets/confirmation.php');
 	}else{
-		echo $envoireussi;
+		//echo $envoireussi;
 		include_once('vue/sujets/erreur_formulaire.php'); 
 	}
 

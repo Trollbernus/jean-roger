@@ -1,8 +1,17 @@
 <?php 
+	include_once('modele/sujets/is_image.php');
+
+	//echo "coucou";
     $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png', 'JPG', 'JPEG', 'PNG', 'GIF');
-    $image_sizes = getimagesize($_FILES['image']['tmp_name']);
-    $infosfichier = pathinfo($_FILES['image']['tmp_name']);
-    $extension_upload = strtolower(  substr(  strrchr($_FILES['image']['name'], '.')  ,1)  );
+    $pasimage=!is_image($_FILES['image']['tmp_name']);
+    if (is_image($_FILES['image']['tmp_name'])) {
+		// on prend quelques proprietes elementaires de l'image
+	    $image_sizes = getimagesize($_FILES['image']['tmp_name']);
+	    $infosfichier = pathinfo($_FILES['image']['tmp_name']);
+	    $extension_upload = strtolower(  substr(  strrchr($_FILES['image']['name'], '.')  ,1)  );
+    }
+
+
     $maxwidth=900;
     $maxheight=5000;
 
@@ -10,6 +19,10 @@
 
 	if ($_FILES['image']['error'] != 0) {
 		$reponse = "Erreur lors de l'envoi de l'image.";
+	}elseif( $pasimage ){
+		$reponse = 'Erreur : votre fichier n\'est pas une image !';
+	}elseif( is_script($_FILES['image']['tmp_name']) ){
+		$reponse = 'Erreur : dis donc qu\'est-ce que t\'essayes de nous envoyer là ???';
 	}elseif ($_FILES['image']['size'] > 2000000) {
 		$reponse = "Erreur : image trop grosse ! (limité à 2 Mo)";
 	}elseif (!in_array($extension_upload, $extensions_autorisees)) {
@@ -19,6 +32,7 @@
 	}elseif ($image_sizes[1] > $maxheight) {
 		$reponse = "Erreur : image trop haute ! (hauteur max : 5000 px (quand même t'abuses))";
 	}else{
+
 		// on renomme l'image
 		//date
 		$j=date('j');

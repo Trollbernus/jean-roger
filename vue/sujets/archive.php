@@ -6,7 +6,7 @@
 	<body>
 		<?php include("vue/headernav.php"); ?>
 
-		<section><article>
+		<section>
 			<h1><?php
 				// foreach ($ttitre as  $titre) {
 					echo $titre['titre'];
@@ -17,6 +17,7 @@
 			foreach($messages as $message)
 			{
 				?>
+			<article>
 				<aside>
 					<p> <em> Posté le <?php echo $message['date'];?> </em></p>
 					<p><?php echo $message['lien'];?> </p>
@@ -29,11 +30,12 @@
 					?>
 				</p>
 				<br/><br/>
+			</article>
 			<?php
 			}
 			?>
-		</article></section>
-		<article><section>
+		</section>
+		<section><article>
 			<h1 id="repondre">Répondre</h1>
 
 			<p>Avant de répondre, assurez-vous d'avoir pris connaissance de <a href="index.php?section=charte">la charte</a>.<br/>
@@ -66,7 +68,7 @@
 			</fieldset>
 
 
-		</section></article>
+		</article></section>
 
 		<?php include("vue/footer.php"); ?>
 

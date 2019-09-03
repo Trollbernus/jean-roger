@@ -16,8 +16,8 @@
 			</p>
 			<h2>Confirmer l'envoi</h2>
 			<p>Êtes-vous sûr que votre message convient ?</p>
-			<fieldset>
- 					<form method="post" action="supprimer.php" enctype="multipart/form-data"> <!-- supprimer a coder !!! -->
+			<!--<fieldset>-->
+				<form method="post" action="supprimer.php" enctype="multipart/form-data"> <!-- supprimer a coder !!! -->
  					<?php if (isset($name)): ?>
 						<input type="hidden" name="nomfichier" value="<?php echo $name; ?>" />
  					<?php endif ?>
@@ -26,9 +26,9 @@
 						<input type="submit" name="submit" value="Non, je me suis trompé." />
 					</p>
 				</form>
-			</fieldset>
-			<fieldset>
- 					<form method="post" action="confirmer.php" enctype="multipart/form-data">
+			<!-- </fieldset> -->
+			<!-- <fieldset> -->
+				<form method="post" action="confirmer.php" enctype="multipart/form-data">
  					<?php if (isset($email)): ?>
 						<input type="hidden" name="mail" value="<?php echo $email; ?>" />										
  					<?php endif ?>
@@ -46,7 +46,7 @@
 						<input type="submit" name="submit" value="Oui, je confirme !" />
 					</p>
 				</form>
-			</fieldset>
+			<!-- </fieldset> -->
 
 
 		</article></section>

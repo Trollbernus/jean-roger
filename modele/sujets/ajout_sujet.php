@@ -4,7 +4,7 @@ function ajout_sujet($titre)
 {
 
     global $bdd;
-    echo $titre;
+    //echo $titre;
     $z=0;
     // on insert le nouveau sujet  
     $req = $bdd->prepare('INSERT INTO sujets(titre,date_crea,date_fin,date_suppr,archive,suppr,type,id_init)
