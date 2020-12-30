@@ -1,3 +1,3 @@
 # jean-roger
-Codes sources du futur fofo coco.
+Codes sources de la commune dessinée (le vrai fo, pas le faux fo)
 Codé en php et mySQL.

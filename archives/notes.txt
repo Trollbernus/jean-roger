@@ -1,8 +1,0 @@
-notes pour moi-même : 
-Mettre les images du fo dans des "figures". Balises html :
-<figure>
-    <img src="images/blocnotes.png" alt="Bloc-Notes" />
-    <figcaption>Le logiciel Bloc-Notes</figcaption>
-</figure>
-Puis ajuster avec le CSS
-

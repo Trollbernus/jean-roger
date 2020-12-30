@@ -1,7 +1,0 @@
-preconnexion
-id : commissaire_du_peuple
-pswd : vivestaline
-
-connexion
-id : Sosso
-mdp : evivenilats
