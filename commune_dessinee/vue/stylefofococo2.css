@@ -1,0 +1,262 @@
+
+/****************
+*Header
+****************/
+
+header
+{
+	text-align: center;
+	
+}
+
+img.head /*Centrer les images du header*/
+{ 
+display: block; 
+margin: 0 auto; 
+/*height: XXXpx; /* spécifiez la hauteur de l'image, une bonne attitude à prendre */ 
+/*width: XXXpx; /* spécifiez la largeur de l'image, une bonne habitude à prendre */ 
+} 
+
+img.topic	
+{
+	max-width: 700px;
+	display: block; 
+}
+
+.header
+{
+	display: inline-block;
+	margin-left: 200px;
+	margin-right: 160px;
+}
+
+
+/***************************
+*Body
+***************************/
+/* On travaille sur la balise body, donc sur TOUTE la page */
+body
+{
+	/*background: #272C4D ; /*GRAND FOND*/
+	background-image: url("images/fond_ok.jpg");
+    color: #8aefff; /* Le texte de la page sera bleu clair ;
+    					remarque : par héritage, toutes les balises dans le body 
+    					seront affectées de cette propriété, sauf celle auxquelle on spécifie une autre propriété.*/
+    font-size: 20px;
+}
+/*#65ff00 ==> pour le vert clair*/
+a
+{
+	color: #4376AC;
+	text-decoration: none;
+}
+a.ouvrir
+{
+	color: #6FAFE9;
+	text-decoration: none;
+}
+
+.politburo
+{
+	color: #f42c04;
+}
+
+/*******************************
+*Barre de navigation
+*******************************/
+
+nav
+{		
+	/*Version boite cote*/
+/*    float: right;
+	background-color: #6572C0; 
+	display: inline-block;
+	width: 300px;
+	text-align: left;
+	text-transform: uppercase; 
+	font-size: 15px;
+	margin-right: 100px; 
+	margin-top: 20px;
+*/
+    /*Version barre horizontale au dessus*/
+    background-color: #6572C0; 
+    display: inline-block;
+    /*width: 1600px;*/
+    width: 100%;	
+    text-align: center;
+    text-transform: uppercase /permet de mettre le texte en majuscule/
+
+
+}
+
+nav ul
+{
+   
+    font-family: trebuchet MS ;
+}
+
+nav li
+{
+	/*Version boite*/
+/*	display: block;
+	margin-right: 15px;
+*/
+	/*Version barre*/
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #161560;
+    /*padding-bottom: 3px;*/
+    text-decoration: none;
+}
+
+/*nav*/ a:hover
+{
+    color: #cecef1;/*violet très clair*/
+    /*border-bottom: 3px solid #cecef1;*//*violet très clair*/
+}
+.topleft
+{
+	text-align: left;
+}
+
+.topright
+{
+	text-align: right;
+}
+
+/*************************************
+*  Blocs centraux
+*************************************/
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+
+aside
+{
+	/*Version boite cote*/
+	position: relative;
+    float: right;
+	max-width: 900px;
+	width:400px;
+	font-family: sans-serif;
+	text-align: justify;
+	word-wrap: break-word; 
+    padding: 10px; 
+    margin-top: 30px;	
+    margin-bottom: 20px;	
+    margin-right: auto;
+    background-color: #1C1E2C;
+
+
+}
+
+
+
+article
+{
+	/*border: 3px groove;*/
+	/*border-color: #ff0000; */
+	
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+  	margin-right: auto;
+  	/*position: relative;*/
+  	width:800px;
+}
+
+article.suppr
+{
+	border: 3px groove;
+	border-color: #ff0000; /*#65ff00 vert clair*/
+}
+
+
+section.bloc /*c'est la partie des posts*/
+{
+	width: 100%;
+	/*min-width: 400px;*//*Exige une largeur minimale, même si un utilisateur a moins de 400px à 70%.*/
+	/*min-height: 150px;*/ 	
+	font-family: sans-serif;
+	/*border: none;*/
+
+	border: none;
+
+	text-align: justify;
+	word-wrap: break-word; /*casse les mots trop longs comme les urls pour revenir à la ligne*/
+	/*overflow: auto;*/ /*si le texte dépasse du bloc, un curseur apparaît.*/
+    /*padding: 20px;*/ /* Marge intérieure de 20px */
+    /*margin: 50px; /* Marge extérieure de 50px */
+    /*margin-bottom: 20px;*/
+    /*margin-top: 20px;*/
+    margin: -20px;  /*auto; /*bloc centré*/
+  	/*margin-right: 20;*/
+  	
+}
+
+section
+{
+	width: 70%;
+	min-width: 400px;/*Exige une largeur minimale, même si un utilisateur a moins de 400px à 70%.*/
+	min-height: 150px; 	
+	background-color: #12131d;
+	font-family: sans-serif;
+	text-align: justify;
+	word-wrap: break-word; /*casse les mots trop longs comme les urls pour revenir à la ligne*/
+	overflow: auto;/*si le texte dépasse du bloc, un curseur apparaît.*/
+    padding: 20px; /* Marge intérieure de 20px */
+    /*margin: 50px; /* Marge extérieure de 50px */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 100px;/*auto; /*bloc centré*/
+  	margin-right: auto;
+  	/*Si on veut des marges différentes sur chaque côté, utiliser les commandes suivantes :
+
+  	Voici la liste pour margin :
+
+	margin-top : marge extérieure en haut ;
+	margin-bottom : marge extérieure en bas ;
+	margin-left : marge extérieure à gauche ;
+	margin-right : marge extérieure à droite.
+	Et la liste pour padding :
+
+	padding-top : marge intérieure en haut ;
+	padding-bottom : marge intérieure en bas ;
+	padding-left : marge intérieure à gauche ;
+	padding-right : marge intérieure à droite.*/
+
+}
+
+h2
+{
+	border: 3px;
+	border-color: #000103;
+	border-radius: 10px; /*angle arrondi*/
+
+}
+
+h1
+{
+	border: 3px;
+	border-color: #000180;
+	border-radius: 10px; /*angle arrondi*/
+
+}
+
+
+
+
+	footer
+	{
+		text-align: center;
+	}

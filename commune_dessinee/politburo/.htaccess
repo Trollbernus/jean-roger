@@ -1,0 +1,4 @@
+AuthName "Attention ! Vous vous apprêtez à entrer au Politburo. En avez-vous le droit ?..."
+AuthType Basic
+AuthUserFile "/opt/lampp/htdocs/jean-roger/politburo/.htpasswd"
+Require valid-user
